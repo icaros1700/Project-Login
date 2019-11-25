@@ -36,6 +36,10 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
 
 <?php require 'partials/header.php'?>
 
+<?php if(!empty($message)): ?>
+<p> <?= $message ?> </p>
+<?php endif ?>
+
 <h1>Login</h1>
 
 <span>or<a href="singup.php"> Sing Up</a></span>
